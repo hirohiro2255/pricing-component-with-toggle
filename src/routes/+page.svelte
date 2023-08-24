@@ -1,2 +1,5 @@
-<h1>Pricing Component with toggle</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Container from '$lib/components/Container.svelte';
+</script>
+
+<Container />
