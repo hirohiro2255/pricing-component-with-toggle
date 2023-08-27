@@ -1,6 +1,6 @@
 ```mermaid
-flowchar TD
-A[Layout] --> B[Header]
-A --> C[CardList]
-
+flowchart TD
+A[page.svelte] --> |isMonthly: boolean| B[Layout]
+B --> |isMonthly| C[CardList]
+B --> |isMonthly| D[Header]
 ```
