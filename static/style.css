@@ -10,9 +10,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-html {
+/* html {
   height: 100%;
-}
+} */
 
 body {
   height: 100%;
@@ -26,4 +26,13 @@ h1, h2, h3, h4, h5, p, hr {
   margin: 0;
 }
 
+
+@media (min-width: 48rem) {
+  body {
+    background-image: url(bg-top.svg), url(bg-bottom.svg);
+    background-position: right 0% top 0%, left 0% bottom;
+    background-size: 30% auto, 30% auto;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
 

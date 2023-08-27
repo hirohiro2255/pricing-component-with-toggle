@@ -163,4 +163,47 @@
 		background: #fff;
 		color: var(--end-color);
 	}
+
+	/* @media (1024px) */
+
+	@media (width > 1024px) {
+		.card-list {
+			flex-direction: row;
+			justify-content: center;
+			/* align-items: center; */
+			gap: 0px;
+			margin-right: 0rem;
+			margin-left: 0rem;
+			margin-top: 4.03125rem;
+			margin-bottom: 4.5rem;
+			height: 500px;
+		}
+		.card:nth-child(odd) {
+			max-height: 453px;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+
+		.card.recommended {
+			padding-top: 3.40625rem;
+		}
+
+		.detail-button {
+		}
+
+		.detail-button:hover {
+			/* background: #fff; */
+			/* border-radius: 6px; */
+			border: 1px solid #6d72de;
+			background: #fff;
+			color: var(--end-color);
+			transition: ease-out 0.3s;
+		}
+
+		.card.recommended .detail-button:hover {
+			border: 1px solid #fff;
+			background: linear-gradient(var(--start-color), var(--end-color));
+			color: #fff;
+		}
+	}
 </style>

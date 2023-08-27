@@ -67,6 +67,7 @@
 		width: 56px;
 		border-radius: 16px;
 		transition: ease-in 0.2s;
+		cursor: pointer;
 	}
 
 	input[type='range']::-webkit-slider-thumb {
