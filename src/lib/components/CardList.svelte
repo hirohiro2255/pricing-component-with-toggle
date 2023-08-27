@@ -1,10 +1,17 @@
+<script>
+	export let isMonthly;
+	$: basicPlan = isMonthly ? '19.99' : '199.99';
+	$: professionalPlan = isMonthly ? '24.99' : '249.99';
+	$: masterPlan = isMonthly ? '39.99' : '399.99';
+</script>
+
 <main class="card-list">
 	<section class="card">
 		<div class="card-wrapper">
 			<h2 class="plan">Basic</h2>
 			<div class="pricing">
 				<small>&#36;</small>
-				<h3>199.99</h3>
+				<h3>{basicPlan}</h3>
 			</div>
 			<div class="detail">
 				<hr />
@@ -24,7 +31,7 @@
 			<h2 class="plan">Professional</h2>
 			<div class="pricing">
 				<small>&#36;</small>
-				<h3>249.99</h3>
+				<h3>{professionalPlan}</h3>
 			</div>
 			<div class="detail">
 				<hr />
@@ -44,7 +51,7 @@
 			<h2 class="plan">Master</h2>
 			<div class="pricing">
 				<small>&#36;</small>
-				<h3>399.99</h3>
+				<h3>{masterPlan}</h3>
 			</div>
 			<div class="detail">
 				<hr />
@@ -64,6 +71,7 @@
 	.card-list {
 		display: flex;
 		flex-direction: column;
+		max-width: 1050px;
 		gap: 2.03125rem;
 		margin-right: 1.5rem;
 		margin-left: 1.5rem;
@@ -72,6 +80,7 @@
 	}
 
 	.card {
+		flex: 1;
 		border-radius: 10px;
 		background: #fff;
 		box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.5);
@@ -172,8 +181,8 @@
 			justify-content: center;
 			/* align-items: center; */
 			gap: 0px;
-			margin-right: 0rem;
-			margin-left: 0rem;
+			margin-right: auto;
+			margin-left: auto;
 			margin-top: 4.03125rem;
 			margin-bottom: 4.5rem;
 			height: 500px;
