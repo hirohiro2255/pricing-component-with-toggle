@@ -1,0 +1,29 @@
+:root {
+  --start-color: hsl(236, 72%, 79%);
+  --end-color: hsl(237, 63%, 64%);
+  --primary: linear-gradient(var(--start-color), var(--end-color));
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue :hsl(232, 13%, 33%);
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f7f7fe;
+  background-image: url(bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: top -10% right -250%;
+}
+
+h1, h2, h3, h4, h5, p, hr {
+  margin: 0;
+}
+
+
